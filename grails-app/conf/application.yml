@@ -20,9 +20,10 @@ environments:
             url: jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000;DB_CLOSE_ON_EXIT=FALSE
         grails:
             neo4j:
+                type: "embedded"
                 username: "neo4j"
                 password: "neo4j"
-                url: bolt://localhost:7687
+                #url: bolt://localhost:7687
     test:
         dataSource:
             dbCreate: update
